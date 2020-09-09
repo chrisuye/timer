@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Tim3r</string>
+    <string name="_00">0</string>
+    <string name="_01">1</string>
+    <string name="start">Start</string>
+    <string name="_24_60_60">24:60:60</string>
+    <string name="time">%2$d:%2$d:%2$d</string>
+    <string name="hour">hour</string>
+    <string name="hours">hours</string>
+    <string name="min">min</string>
+    <string name="sec">sec</string>
+    <string name="_23">23</string>
+    <string name="h">h</string>
+    <string name="m">m</string>
+    <string name="s">s</string>
+    <string name="test">test</string>
+    <string name="_59">59</string>
+    <string name="todo">TODO</string>
+    <string name="swipe">Swipe</string>
+    <string name="swipes"><![CDATA[swipe>>>]]></string>
+</resources>

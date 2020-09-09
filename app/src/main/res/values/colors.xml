@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A3F0DE</color>
+    <color name="colorPrimaryDark">#29D5AD</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="background">#56FFD49F</color>
+    <color name="ring">#25FFD49F</color>
+    <color name="black">#000000</color>
+    <color name="startColor">#00BFFF</color>
+    <color name="endColor">#FF0000</color>
+    <color name="buttonColor">#FAF6F0</color>
+    <color name="greetingColor">#E96251</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#A7AFB2</color>
+</resources>

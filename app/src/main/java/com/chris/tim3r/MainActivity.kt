@@ -4,21 +4,13 @@ import android.annotation.SuppressLint
 import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
-import android.app.PendingIntent
 import android.content.Context
-import android.content.Context.MODE_PRIVATE
-import android.content.Intent
-import android.content.SharedPreferences
-import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.os.*
-import android.util.Log.d
 import android.view.MotionEvent
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.shitij.goyal.slidebutton.SwipeButton
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.bday.view.*
 import kotlinx.android.synthetic.main.count_down.*
 import kotlinx.android.synthetic.main.count_down.view.*
 import kotlinx.android.synthetic.main.texts.view.*
@@ -49,22 +41,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val sharedPref = getSharedPreferences("Settings", MODE_MULTI_PROCESS)
-        val checkStart = sharedPref.getBoolean("start", false)
-
-        if (checkStart) {
-            greet.visibility = View.GONE
-        }
-        greet.swipe_btn.setOnClickListener{
-            greet.visibility = View.GONE
-
-            with (sharedPref.edit()) {
-                putBoolean("start", true)
-                commit()
-            }
-
-        }
 
         setTime()
         handler = Handler()
